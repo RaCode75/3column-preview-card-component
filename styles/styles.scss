@@ -1,0 +1,150 @@
+// ### Primary
+
+$orange: hsl(31, 77%, 52%);
+$dark_cyan:hsl(184, 100%, 22%);
+$very_dark_cyan: hsl(179, 100%, 13%);
+
+// ### Neutral
+
+$t_white: hsla(0, 0%, 100%, 0.75);
+$light_gray: hsl(0, 0%, 95%); //(background, headings, buttons)
+// - Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+// - Weights: 400
+// - Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+// - Weights: 700
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $t_white;
+    font-size: 15px;
+    font-family: Lexend Deca, sans-serif;    
+    font-weight: 400;
+}
+
+main{
+    background-color: $t_white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 4rem 1.5rem;
+
+
+    h2{
+        font-family: Big Shoulders Display, cursive;
+        font-weight: 700;        
+        font-size: 2.5rem;
+        width: 90%;
+        text-transform: uppercase;
+        margin: 1.7rem 0;
+    }
+    .card{
+        width: 100%;
+        margin: 0 auto;
+        padding: 2.8rem 2.5rem;
+        color: $t_white;
+
+        p{
+            width: 95%;
+            line-height: 1.6rem;
+        }
+
+        .learn{
+            margin-top: 1.5rem;
+            height: 3rem;
+            width: 50%;
+            padding: 0 auto;
+            border-radius: 2rem;
+            font-size: 15px;
+            font-family: Lexend Deca, sans-serif;    
+            font-weight: 400;
+            border: none;
+        }
+
+        .learn:hover{
+            background-color: transparent;
+            outline: $t_white solid 2px;
+            color: $t_white;
+        }
+    }
+
+    .sedan{
+        background-color: $orange;
+        border-radius: 0.5rem 0.5rem 0 0;
+        .learn{
+            color: $orange;
+        }
+    }
+
+    .suvs{
+        background-color: $dark_cyan;
+        .learn{
+            color: $dark_cyan;
+        }
+    }
+
+    .luxury{
+        background-color: $very_dark_cyan;
+        border-radius: 0 0 0.5rem 0.5rem;
+        .learn{
+            color: $very_dark_cyan;
+        }
+    }
+}
+
+@media screen and (min-width: 600px){
+
+    main{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+            .card{
+                width:18.8rem;
+                margin: 15% 0;
+
+                .learn {
+                    width: 70%;
+                    margin-top: 4rem;
+                    }
+                }
+            .sedan{
+                border-radius: 0.5rem 0 0 0.5rem;
+            }
+            .luxury{
+                border-radius: 0 0.5rem 0.5rem 0;
+            }
+    
+        }
+}
+
+@media screen and (min-width: 800px) and (orientation: portrait){
+
+    main{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+            .card{
+                width:28%;
+                margin: 15% 0;
+
+                .learn {
+                    width: 70%;
+                    margin-top: 4rem;
+                    }
+                }
+            .sedan{
+                border-radius: 0.5rem 0 0 0.5rem;
+            }
+            .luxury{
+                border-radius: 0 0.5rem 0.5rem 0;
+            }
+    
+        }
+}

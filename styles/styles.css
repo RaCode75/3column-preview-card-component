@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+  font-family: Lexend Deca, sans-serif;
+  font-weight: 400;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 4rem 1.5rem;
+}
+
+main h2 {
+  font-family: Big Shoulders Display, cursive;
+  font-weight: 700;
+  font-size: 2.5rem;
+  width: 90%;
+  text-transform: uppercase;
+  margin: 1.7rem 0;
+}
+
+main .card {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.8rem 2.5rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+main .card p {
+  width: 95%;
+  line-height: 1.6rem;
+}
+
+main .card .learn {
+  margin-top: 1.5rem;
+  height: 3rem;
+  width: 50%;
+  padding: 0 auto;
+  border-radius: 2rem;
+  font-size: 15px;
+  font-family: Lexend Deca, sans-serif;
+  font-weight: 400;
+  border: none;
+}
+
+main .card .learn:hover {
+  background-color: transparent;
+  outline: rgba(255, 255, 255, 0.75) solid 2px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+main .sedan {
+  background-color: #e38826;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+main .sedan .learn {
+  color: #e38826;
+}
+
+main .suvs {
+  background-color: #006970;
+}
+
+main .suvs .learn {
+  color: #006970;
+}
+
+main .luxury {
+  background-color: #004241;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+main .luxury .learn {
+  color: #004241;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .card {
+    width: 18.8rem;
+    margin: 15% 0;
+  }
+  main .card .learn {
+    width: 70%;
+    margin-top: 4rem;
+  }
+  main .sedan {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  main .luxury {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+
+@media screen and (min-width: 800px) and (orientation: portrait) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .card {
+    width: 28%;
+    margin: 15% 0;
+  }
+  main .card .learn {
+    width: 70%;
+    margin-top: 4rem;
+  }
+  main .sedan {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  main .luxury {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
